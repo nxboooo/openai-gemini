@@ -1,19 +1,5 @@
 [build]
-  publish = "public/"
-  functions = "netlify/functions"
-  node_bundler = "esbuild"
+        publish = "public/"
 
-[[redirects]]
-  from = "/v1/chat/completions"
-  to = "/.netlify/functions/chat-completions"
-  status = 200
-
-[[redirects]]
-  from = "/v1/models"
-  to = "/.netlify/functions/models"
-  status = 200
-
-[[redirects]]
-  from = "/v1/embeddings"
-  to = "/.netlify/functions/embeddings"
-  status = 200
+[functions]
+        node_bundler = "esbuild"
